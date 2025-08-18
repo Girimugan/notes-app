@@ -1,0 +1,11 @@
+.text-left {
+  padding: 30px;
+}
+
+img {
+  border-radius: 10px;
+}
+h3 {
+  position: relative;
+  top: -80px;
+}

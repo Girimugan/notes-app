@@ -1,0 +1,29 @@
+.number {
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    border-radius: 60px; 
+    margin-bottom: 100px;
+    margin-right: 90px;
+}
+h1 {
+    font-size: 65px;
+    margin-top: 8px;
+    margin-left: 15px;
+    color: whitesmoke;
+}
+h4 {
+     position: relative;
+     top: -70px;
+     margin-left: -100px;
+}
+p {
+    position: relative;
+    top: -50px;
+    opacity: 0.6;
+    color: black;
+}
+.btn1 {
+    margin-left: 0;
+    
+}
