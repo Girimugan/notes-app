@@ -26,10 +26,9 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import User from './Pages/User';
 import Contact from './Pages/Contact';
+import Profile from "./Profile";
+import Setting from "./Setting";
 
-import Products from './Products';
-// import DemoProfile from './DemoProfile';
-// import Setting from './Setting';
 
 function App() {
 
@@ -67,22 +66,20 @@ function App() {
           </nav>
         </header>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+         <Routes>
+        {/* Normal Routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
 
-        <Routes>
-          <Route path="/user" element={<User />} />
-          <Route path="products" element={<Products />}>
-            {/* <Route path="profile" element={<DemoProfile />} /> */}
-            {/* <Route path="setting" element={<Setting />} /> */}
-          </Route>
-        </Routes>
-
-
-      </BrowserRouter>
+        {/* Nested Routes */}
+        <Route path="user" element={<User />}>
+          <Route path="profile" element={<Profile />} />
+          <Route path="setting" element={<Setting />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+          
 
 
 

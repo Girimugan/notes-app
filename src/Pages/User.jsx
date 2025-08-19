@@ -1,31 +1,32 @@
 
 import React from "react";
-import Products from "../Products";
-
+import { NavLink, Outlet } from "react-router-dom";
+import "./User.css"; 
 
 const User = () => {
-  const bgStyle1 = {
-    backgroundColor:'lightgray',
-    width: '100%',
-    height: '600px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white',
-    fontSize: '2rem',
-    fontWeight: 'bold',
-  };
   return (
-    <div>
-      <div style={bgStyle1}>
-      <Products/>
-      
+    <div className="user-container">
 
-      </div>
+      <div className="layout">
+        <aside className="sidebar">
+          <h3 className="menu-title">Menu</h3>
+          <nav className="menu">
+            <NavLink to="profile" className="menu-link">
+              Profile
+            </NavLink>
+            <NavLink to="setting" className="menu-link">
+              Location
+            </NavLink>
+          </nav>
+        </aside>
+
       
+        <main className="content">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };
 
 export default User;
-
