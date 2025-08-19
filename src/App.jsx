@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Reacttemp from './core-concepts/Reacttemp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
 import './App.css';
 
 // import './MyForm.css';
@@ -30,6 +29,7 @@ import Profile from "./Profile";
 import Setting from "./Setting";
 
 
+
 function App() {
 
   // const style = {
@@ -54,31 +54,33 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <header className="header">
-          <div className="left-title">Route</div>
-          <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/user">User</Link>
-            <Link to="/contact">Contact</Link>
-            <button className="nav-btn">Click Me</button>
-          </nav>
-        </header>
+    <BrowserRouter>
+  <header className="header">
+    <div className="left-title">Route</div>
+    <nav className="navbar">
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/user">User</Link>
+      <Link to="/contact">Contact</Link>
+      <button className="nav-btn">Click Me</button>
+    </nav>
+  </header>
 
-         <Routes>
-        {/* Normal Routes */}
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="about" element={<About />} />
+    <Route path="contact" element={<Contact />} />
 
-        {/* Nested Routes */}
-        <Route path="user" element={<User />}>
-          <Route path="profile" element={<Profile />} />
-          <Route path="setting" element={<Setting />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Route path="user" element={<User />}>
+      <Route path="profile" element={<Profile />} />
+      <Route path="setting" element={<Setting />} />
+    </Route>
+    
+
+    
+  </Routes>
+</BrowserRouter>
+
           
 
 

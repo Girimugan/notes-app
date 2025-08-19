@@ -9,7 +9,7 @@ const Profile = () => {
       <h2 className="profile-title">Profile Information</h2>
 
       <Row className="g-4">
-        {/* Card 1 */}
+        
         <Col md={6} lg={3}>
           <Card className="profile-card">
             <Card.Body>
@@ -23,7 +23,7 @@ const Profile = () => {
           </Card>
         </Col>
 
-        {/* Card 2 */}
+        
         <Col md={6} lg={3}>
           <Card className="profile-card">
             <Card.Body>
@@ -37,7 +37,7 @@ const Profile = () => {
           </Card>
         </Col>
 
-        {/* Card 3 */}
+        
         <Col md={6} lg={3}>
           <Card className="profile-card">
             <Card.Body>
@@ -51,7 +51,7 @@ const Profile = () => {
           </Card>
         </Col>
 
-        {/* Card 4 */}
+      
         <Col md={6} lg={3}>
           <Card className="profile-card">
             <Card.Body>
@@ -65,7 +65,7 @@ const Profile = () => {
           </Card>
         </Col>
 
-        {/* Extra Cards */}
+       
         <Col md={6} lg={3}>
           <Card className="profile-card">
             <Card.Body>
